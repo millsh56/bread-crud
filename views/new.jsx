@@ -28,7 +28,7 @@ function New () {
             id="hasGluten"
             defaultChecked
           />
-          <br />
+          <br/>
           <input type="submit"/>
         </form>
         <div className="backButton">
