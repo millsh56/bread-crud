@@ -5,7 +5,7 @@ function Edit ({bread, index}) {
     return (
       <Default>
         <h2>Edit a bread</h2>
-        <form >
+        <form action={`/breads/${bread.id}?_method=PUT`} method="POST">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -19,7 +19,6 @@ function Edit ({bread, index}) {
             type="text"
             name="image"
             id="image"
-            required
             defaultValue={bread.image}
             />
           <label htmlFor="hasGluten">Has Gluten?</label>
@@ -28,8 +27,16 @@ function Edit ({bread, index}) {
             name="hasGluten"
             id="hasGluten"
             defaultChecked={bread.hasGluten}
-            pattern="https?://.+" title="Include http://"
           />
+          <label htmlFor="baker"> Baker</label>
+<select name="baker" id="baker">
+  <option value="Mikey">Mikey</option>
+  <option value="Gerard">Gerard</option>
+  <option value="Frankie">Frankie</option>
+  <option value="Ray">Ray</option>
+  <option value="Pete">Pete</option>
+  <option value="Patrick">Patrick</option>
+</select>
           <br />
           <input type="submit"/>
         </form>

@@ -24,8 +24,18 @@ function New () {
             type="checkbox"
             name="hasGluten"
             id="hasGluten"
-            defaultChecked
-          />
+            defaultChecked />
+            
+<label htmlFor="baker"> Baker</label>
+<select name="baker" id="baker">
+  <option value="Mikey">Mikey</option>
+  <option value="Gerard">Gerard</option>
+  <option value="Frankie">Frankie</option>
+  <option value="Ray">Ray</option>
+  <option value="Pete">Pete</option>
+  <option value="Patrick">Patrick</option>
+</select>
+
           <br/>
           <input type="submit"/>
         </form>
